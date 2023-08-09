@@ -1,6 +1,6 @@
 This is code to train the U-Net based model for dendrite segmentation used in
-the paper **A photo-switchable assay system for dendrite degeneration and repair
-in Drosophila melanogaster**.
+the paper [**A photo-switchable assay system for dendrite degeneration and repair
+in Drosophila melanogaster**](https://www.pnas.org/doi/10.1073/pnas.2204577119).
 
 
 ## Environment setup
