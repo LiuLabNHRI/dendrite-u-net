@@ -1,0 +1,11 @@
+name: tf2_mac
+channels:
+  - defaults
+dependencies:
+  - python=3.8
+  - numpy=1.20.2
+  - pandas=1.2.4
+  - jupyter=1.0.0
+  - scikit-image=0.18.1
+  - scikit-learn=0.24.2
+  - pip=21.1.2

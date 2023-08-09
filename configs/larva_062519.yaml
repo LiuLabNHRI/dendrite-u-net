@@ -1,0 +1,74 @@
+# Config for segmenting skeleton of neurons
+# 4-layered, W0 = 10, SGD
+# No cropping in validation.
+#
+# Chien-Hsiang Hsu, 2019.06.18
+
+
+model_name: larva_062519
+
+
+####################################################################################################
+# Training data
+####################################################################################################
+train_data: 'training_larva'
+img_file_pattern: '*.png'
+mask_file_pattern: '*.png' 
+match_pattern: 'Larvae'
+
+# Used in tensorflow to load data
+read_cfg :
+  channels: 1
+  dtype: uint8   
+  resize: null
+  crop_bd_width: 0
+  scale: 1/255.
+
+test_size: 0.2
+random_state: 423
+
+
+####################################################################################################
+# Dataset config
+####################################################################################################
+# training dataset
+train_cfg:
+  crop_size: [512, 512]
+  to_flip: True
+
+# validation dataset
+val_cfg:
+  crop_size: [512, 512]
+
+batch_size: 5
+
+
+####################################################################################################
+# Model config
+####################################################################################################
+num_filters_list: [64, 128, 256, 512]
+n_classes: 2
+
+
+####################################################################################################
+# TRAIN config
+####################################################################################################
+# weight config
+w_cfg:
+  w0: 10
+  sigma: 5
+
+# unweighted_bce, unweighted_bce_dice, unweighted_dice
+loss_fn_name: unweighted_bce_dice
+optimizer: tf.keras.optimizers.Adam(learning_rate=1e-4)
+metrics: [u_net.dice_loss]
+monitor: val_dice_loss
+epochs: 500
+
+
+####################################################################################################
+# EVAL config
+####################################################################################################
+n_eval: 5
+
+

@@ -1,0 +1,17 @@
+# Contain common paths/parameters for other config files.
+#
+# Chien-Hsiang Hsu, 2019.04.29
+
+
+####################################################################################################
+# Path and folder
+####################################################################################################
+root_folder: '.'
+data_subfolder: data
+img_subfolder: 'images' # subfolder containing images under each dataset folder
+mask_subfolder: masks # subfolder containing masks under each dataset folder
+
+model_subfolder: models
+log_subfolder: logs
+result_subfolder: results
+prediction_subfolder: predictions

@@ -1,0 +1,22 @@
+# Config of data used for testing.
+#
+# Chien-Hsiang Hsu, 2019.05.02
+
+
+####################################################################################################
+# TEST config
+####################################################################################################
+test_data:
+  name: 'fig_s1_images' # name of folder containing images under the data folder
+  file_type: '*.png'
+  filter_patter: ''
+
+test_read_cfg:
+  channels: 1
+  dtype: uint8 
+  crop_bd_width: 0
+  resize: null
+  scale: 1/255.
+
+chunk_size: 10 # number of images to predict each time (memory issue)
+output_type: overlay_pred # overlay_ans, overlay_pred
