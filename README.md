@@ -41,7 +41,7 @@ optional arguments:
 
 
 ### Add the provided pre-trained model
-1. Download and unzip the provided model folder (model_062519).
+1. Download and unzip the [provided model folder](https://l.facebook.com/l.php?u=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1wHUNHwVGZHCyRqUBabzZr9tJ7tGr8e9I%3Fusp%3Dsharing%26fbclid%3DIwAR0kmds2VTJBKHmasr_QdmrfbsGdBhcV3H8OFKvkjbm_o7ypHkiF38web-Q&h=AT1tpljjO-vnhtFv1YeaLC1C0ZPQ44Mb7psIUL_6KRjIyUngIMMs1ZASg5ED3toVOc-6h9pnIYrlkTXmKjWRbct9q6wAqSDyloXh2TgG-ihzM-F6fQUIm8745aJ8fHGtooNPxvh8ReGAwvNRSFbaM3TC) (model_062519).
 2. Move the model folder into the `models` subfolder:
 
 ~~~bash
